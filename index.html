@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Cody's Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="open">
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div>
+
+    <section class="outerLanding" id="home">
+      <section class="landingSection">
+        <div class="header" id="header">
+          <h2 class="logo" id="logo">CS Portfolio</h2>
+          <i class="fa fa-bars x2" onclick="menuToggle()"></i>
+          <ul id="navigation">
+            <li>
+              <a href="#home" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="resume/ResumeCodySaxe2023FrontEndDev.docx" download="CodysResume2023" target="_blank">Resume</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <i class="fa fa-times x2" onclick="menuToggle()"></i>
+          </ul>
+        </div>
+        <div class="bannerText">
+          <h2>Cody Saxe</h2>
+          <br>
+          <h3>Front End Developer</h3>
+          <p>Your friendly neighborhood coder!</p>
+          <a href="resume/ResumeCodySaxe2023FrontEndDev.docx" download="CodysResume2023" target="_blank">See My Resume!</a>
+        </div>
+        <img src="avatar.png" alt="avatar" class="avatar">
+        <img src="avatar.png" alt="avatar" class="avatarMobile">
+      </section>
+    </section>
+
+    <section class="aboutSection" id="about">
+      <h2 class="heading">About Me</h2>
+      <p class="para">Hi, I’m Cody! I’m a Front End Developer. I started this journey 10 years ago and, since then, have graduated with a degree in Computer Science and worked on several projects to create products for start-ups, agencies and personal clients that are widely used. Today, I am a freelance developer looking to provide the best service and product that I possibly can for each of my clients.
+        <br><br>I’m creative, confident and constantly striving to improve my abilities. I love to work with businesses and clients to create a digital product that makes both parties happy.
+      </p>
+      <div class="container">
+        <div class="aboutBox">
+          <img src="images/seo.png" alt="" class="devImage">
+          <h2>Optimal Design</h2>
+        </div>
+        <div class="aboutBox">
+          <img src="images/development.png" alt="" class="devImage">
+          <h2>Clean Code</h2>
+        </div>
+        <div class="aboutBox">
+          <img src="images/app-development.png" alt="" class="devImage">
+          <h2>Responsive Frontend</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="techSection">
+      <div class="contentBox">
+        <h2>Technologies I Use:</h2>
+        <p>
+          Throughout my journey as a developer, I’ve picked up some very useful skills and have become familiar with a number of technologies. Along with HTML, CSS, and JavaScript, I use tools like React.js for strong frameworks and Node.js for backend work to utilize the use of APIs. I’m also familiar with database technologies such as SQL and MongoDB as well as Git and version control.
+        </p>
+      </div>
+      <div class="imgBox">
+        <img src="images/coding.png" alt="">
+      </div>
+    </section>
+
+    <section class="contactSection" id="contact">
+      <div class="title">
+        <h2 class="titleText">Contact</h2>
+        <p>
+          Tell me about your next dream project and what I can do to help make it a reality!
+        </p>
+      </div>
+      <div class="contact">
+        <form id="form">
+          <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+              <input type="text" placeholder="Name" id="from_name">
+            </div>
+            <div class="inputBox">
+              <input type="text" placeholder="Email" id="email_id">
+            </div>
+            <div class="inputBox">
+              <textarea placeholder="Message" id="message"></textarea>
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="send email" id="sendButton">
+            </div>
+          </div>
+        </form>
+        <img src="images/signboard.png" alt="">
+      </div>
+    </section>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('user_TN3uoACsLFDPEI10zE5U8')</script>
+
+  </body>
+</html>
